@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+	
+		<title>Shift</title>
+		<meta charset = "UTF-8">
+	
+	</head>
+	
+	<!--
+		NOTE:
+		===============================================================================================
+		Because of simplicity & demonstration purposes, the "style" attribute is used within html tags.
+		Nevertheless it is recommended to use CSS for styling.
+
+		In some "div" tags the "margin-left:6px" exists to compensate "margin-left:-6px" in "img" tags
+		
+		Some tag attributes are put into new lines, to keep them more visible.
+		===============================================================================================
+	-->
+	
+	<body>
+	
+		<center>
+
+			<section>
+
+				<!--NEXT BAR -->
+				<h2>Bar</h2>
+
+				<div id="bar" style="margin-left:6px"></div>
+				
+				<button type="button" onclick="newGame()">START & RESET</button>
+
+				<!--GAME BOARD-->
+				<h2>Board</h2>
+
+				<div style="margin-left:6px">
+				
+					<!--FIRST ROW-->
+					<div id="first-row" style="margin-top: -6px;">
+
+						<img alt="0" 
+							 src="Empty.png"  
+							 style="border:none;margin-left:-6px" 
+							 onclick="playerPosition(this.alt)">
+
+						<img alt="1" 
+							 src="Empty.png"  
+							 style="border:none;margin-left:-6px" 
+							 onclick="playerPosition(this.alt)">
+
+						<img alt="2" 
+							 src="Empty.png"  
+							 style="border:none;margin-left:-6px" 
+							 onclick="playerPosition(this.alt)">
+
+					</div>
+
+
+					<!--SECOND ROW-->
+					<div id="second-row" style="margin-top: -6px;">
+
+						<img alt="3" 
+							 src="Empty.png"  
+							 style="border:none;margin-left:-6px" 
+							 onclick="playerPosition(this.alt)">
+
+						<img alt="4" 
+							 src="Empty.png"  
+							 style="border:none;margin-left:-6px" 
+							 onclick="playerPosition(this.alt)">
+
+						<img alt="5" 
+							 src="Empty.png"  
+							 style="border:none;margin-left:-6px" 
+							 onclick="playerPosition(this.alt)">
+
+					</div>
+
+
+					<!--THIRD ROW-->
+					<div id="third-row" style="margin-top: -6px;">
+
+						<img alt="6" 
+							 src="Empty.png"  
+							 style="border:none;margin-left:-6px" 
+							 onclick="playerPosition(this.alt)">
+
+						<img alt="7" 
+							 src="Empty.png"  
+							 style="border:none;margin-left:-6px" 
+							 onclick="playerPosition(this.alt)">
+
+						<img alt="8" 
+							 src="Empty.png"  
+							 style="border:none;margin-left:-6px" 
+							 onclick="playerPosition(this.alt)">
+
+					</div>
+
+				</div>
+
+				
+				<button 
+				id="btn-shift" 
+				type="button" 
+				style="visibility:hidden;" 
+				onclick="systemPosition();">
+				
+					SHIFT
+					
+				</button>
+
+				
+				<hr width="50%">
+
+			</section>
+
+		
+
+		
+		<br>
+		<br>
+		For more explanation please visit - 
+		<a href = "https://github.com/Incrementis/Javascript-shifting-/wiki"> 
+		Shifting Wiki</a>
+
+
+		</center>
+	</body>
+
+	
+	<script language = "javascript" type = "text/javascript" src = "shift.js"></script> 
+
+</html>
