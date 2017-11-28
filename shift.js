@@ -108,23 +108,23 @@ function newGame()
 			
 		}
 		
-		//Setting all the game board fields to true, to check later if it can be filled
+		//Setting all the game board fields to true, to check later if a field can be filled
 		gameBoard.Rows.push(true);
 
 	}
 	
 
-	//Initializing first turn of pseudo AI
+	//----INIT first turn of pseudo AI----//
 	/*
-			ATTENTION:
-			Shifting the game bar array.
+		ATTENTION:
+		Shifting the game bar array.
 	*/
 	gameBar.Rounds.shift();
 
 	//Clearing game bar
 	gameBar.DivContainer.innerHTML = "";
 
-	//Updating rounds and showing in browser
+	//Updating game bar (turns/rounds) and showing in browser
 	for(var round = 0; round < gameBar.Rounds.length; round++)
 	{
 		gameBar.DivContainer.innerHTML += gameBar.Rounds[round].image;
@@ -181,14 +181,14 @@ function playerPosition(ID)
 	{
 		/*
 			ATTENTION:
-			Shifting the game bar array.
+			Shifting the game bar array "Rounds".
 		*/
 		gameBar.Rounds.shift();
 
-		//Clearing game bar
+		//Clearing game bar in browser
 		gameBar.DivContainer.innerHTML = "";
 
-		//Updating rounds and showing in browser
+		//Updating game bar (turns/rounds) and showing in browser
 		for(var round = 0; round < gameBar.Rounds.length; round++)
 		{
 			gameBar.DivContainer.innerHTML += gameBar.Rounds[round].image;
@@ -282,7 +282,7 @@ function systemPosition()
 			//Clearing game bar
 			gameBar.DivContainer.innerHTML = "";
 
-			//Updating rounds and showing in browser
+			//Updating game bar (turns/rounds) and showing in browser
 			for(var round = 0; round < gameBar.Rounds.length; round++)
 			{
 				gameBar.DivContainer.innerHTML += gameBar.Rounds[round].image;
